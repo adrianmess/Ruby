@@ -12,3 +12,7 @@ frequencies = frequencies.sort_by { |words, count|
   count
   }
 frequencies.reverse!
+
+frequencies.each { |word, value|
+  puts "#{word} #{value}"
+  }
