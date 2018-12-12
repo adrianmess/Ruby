@@ -1,3 +1,3 @@
-def alphabetize
+def alphabetize(arr, rev=false)
 
 end
