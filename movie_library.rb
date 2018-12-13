@@ -1,5 +1,6 @@
 movies = {
   The_Matrix: 5,
+  Animatrix: 4
   }
 
 puts "What would you like to do?"
@@ -30,10 +31,16 @@ case choice
     end
   when "display"
 	  movies.each { |movie, rating| 
-      puts "#{movie} #{rating}"
+      puts "#{movie}: #{rating}"
       }
   when "delete"
-  	puts "Deleted!"
+  	puts "What movie do you want to delete?"
+  	delete = gets.chomp
+  	if movies[delete] == nil?
+      "Movie not found"
+    else
+      movies.delete(delete)
+    end
 	else 
   	puts "Error!"
 end
