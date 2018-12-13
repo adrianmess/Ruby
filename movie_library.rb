@@ -12,6 +12,8 @@ case choice
     title = gets.chomp
     puts "Please provide rating between 1-5"
   	rating = gets.chomp
+  	movies[title] = rating
+  	puts "Movie has been added!"
   when "update"
   	puts "Updated!"
   when "display"
