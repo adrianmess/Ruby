@@ -29,7 +29,9 @@ case choice
       movies[title] = rating
     end
   when "display"
-	  puts "Movies!"
+	  movies.each { |movie, rating| 
+      puts "#{movie} #{rating}"
+      }
   when "delete"
   	puts "Deleted!"
 	else 
