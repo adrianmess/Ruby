@@ -12,7 +12,7 @@ case choice
     title = gets.chomp
     puts "Please provide rating between 1-5"
   	rating = gets.chomp
-  	movies[title] = rating
+  	movies[title.to_sym] = rating.to_i
   	puts "Movie has been added!"
   when "update"
   	puts "Updated!"
