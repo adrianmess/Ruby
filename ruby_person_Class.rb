@@ -6,4 +6,7 @@ class Person
 	end
 end
 
+class Personality < Person
+end
+
 me = Person.new("Adrian")
