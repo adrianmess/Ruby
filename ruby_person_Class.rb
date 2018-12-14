@@ -1,6 +1,8 @@
 class Person
-	def initialize(name)
+	def initialize(name, age, profession)
 		@name = name
+		@age = age
+		@profession = profession
 	end
 end
 
