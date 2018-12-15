@@ -6,6 +6,16 @@ class Account
     @balance = balance
   end
 
+  public
+  
+  def display_balance(pin_number)
+   puts pin_number == pin ? "Balance: $#{@balance}." : pin_error
+  end
+
+  def withdraw(pin_number, amount)
+   puts pin_number == pin ? "Withdrew #{amount}. New balance: $#{@balance}" : pin_error
+  end
+
     private
   
   def pin
