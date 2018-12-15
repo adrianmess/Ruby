@@ -26,3 +26,5 @@ class Account
     return "Access denied: incorrect PIN."
   end
 end
+
+checking_account = Account.new("Adrian", 100)
