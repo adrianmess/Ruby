@@ -17,3 +17,5 @@ class Computer
 	return @@users
   end
 end
+
+my_computer = Computer.new("amessado", "pass")
